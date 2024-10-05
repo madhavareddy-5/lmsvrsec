@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAHE LMS Portal</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #0d1a3a;
+            color: white;
+        }
+        .banner {
+            width: 100%;
+            height: 150px;
+            background-color: #f4f4f4 ; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .banner img {
+            max-height: 100%;
+            width: auto;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 80vh;
+            text-align: center;
+        }
+        .logo {
+            margin-bottom: 20px;
+        }
+        .college-name {
+            font-size: 36px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #00ffff;
+        }
+        .department {
+            font-size: 20px;
+            margin-bottom: 30px;
+        }
+        .login-form {
+            background-color: #1e2d58;
+            padding: 40px;
+            border-radius: 10px;
+            width: 300px;
+        }
+        .login-form input[type="text"], 
+        .login-form input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: none;
+        }
+        .login-form input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #00ffff;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            color: #0d1a3a;
+            cursor: pointer;
+        }
+        .login-form a {
+            color: #00ffff;
+            text-decoration: none;
+            font-size: 14px;
+            margin-top: 10px;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Banner Section for VRSEC -->
+    <div class="banner">
+        <img src="https://sahelms.vrsiddhartha.ac.in/pluginfile.php/1/theme_moove/logo/1727973007/vrsec.png" alt="VRSEC Banner">
+    </div>
+
+    <div class="container">
+        <!-- VRSEC Logo placeholder -->
+        <div class="logo">
+            <img src="https://th.bing.com/th/id/R.01e345d46842858f1c7e5a2b7a8084e0?rik=kkRBDXiZ0CC%2f4g&riu=http%3a%2f%2fwww.ranklogos.com%2fwp-content%2fuploads%2f2014%2f10%2fVrsec-373x500.png&ehk=f01%2fIjRsH65Fq2rcUKyRbB87ilAEAsWevEfad3e%2bFPg%3d&risl=&pid=ImgRaw&r=0" alt="VRSEC Logo" width="150">
+        </div>
+        
+        <!-- College Name and Department -->
+        <div class="college-name">SAHE</div>
+        <div class="department">Department of Information Technology</div>
+
+        <!-- Login Form -->
+        <div class="login-form">
+            <form action="/submit-login" method="post">
+                <input type="text" name="roll_or_email" placeholder="Roll Number or Email" required>
+                <input type="password" name="password" placeholder="Password" required>
+                <a href="/forgot-password"><ul>Forgot Password?</ul></a>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>
